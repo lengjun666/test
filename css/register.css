@@ -1,0 +1,44 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f9f9f9;
+}
+.box{
+	width: 800px;
+	height: 800px;
+	background: #FFFFFF;
+	margin: 5px auto;
+}
+.box .logoImg{
+	width: 50px;
+	height: 50px;
+	background: url(../img/logo.png);
+	margin: 0px auto;
+}
+.box h1{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+/*文本框区域*/
+.box .con{
+	width: 300px;
+	height: 300px;
+	margin: 40px auto;
+}
+.con form input{
+	width: 100%;
+	height: 50px;
+	margin: 10px 0px;
+	padding: 0px 10px;
+	/*内边距禁止变大*/
+	box-sizing: border-box;
+}
+/*最后一个子类*/
+.con form input:last-child{
+	background: #FF6700;
+	color: #F9F9F9;
+}

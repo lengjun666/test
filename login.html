@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>小米账号-登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<!--顶部top-->
+		<div class="topBox">
+			<img src="img/mistore_logo.png" />
+		</div>
+		<!--中间区域-->
+		<div class="con">
+			<div class="conBox">
+				<span class="userSpan">账号登录</span>
+				<span class="ewmSpan">扫码登录</span>
+				<!--账号登录的div-->
+				<div class="userBox">
+					<form action="php/login.php" method="post">
+						<input type="text" name="username" placeholder="请输入用户名" />
+						<input type="password" name="password" placeholder="请输入密码" />
+						<input type="submit" value="登录"/>
+					</form>
+				</div>
+				<!--扫描登录的div-->
+				<div class="ewmBox"></div>
+			</div>
+
+		</div>
+	</body>
+<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mi.js" type="text/javascript" charset="utf-8"></script>
+</html>

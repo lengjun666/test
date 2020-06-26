@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.box{
+	position: relative;
+	width: 1226px;
+	/*height: 470px;*/
+	height: 460px;
+	background: pink;
+	margin: auto;
+}
+.box img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	/*隐藏*/
+	display: none;
+}
+/*默认显示第一张图片*/
+.box img:nth-child(1){
+	display: block;
+}
+/*切换小圆点*/
+.box ul{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.box ul li{
+	/*去掉默认的小黑点*/
+	list-style: none;
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: rgba(255,255,255,0.4);
+	margin: 0px 4px;
+	/*圆角*/
+	border-radius: 50%;
+	/*修改光标为小手*/
+	cursor: pointer;
+}
+/*第一个小圆点*/
+.box ul .listOne{
+	background: #ffffff;
+	border: 1px solid lightgray;
+}
+.box div{
+	position: absolute;
+	width: 25px;
+	height: 35px;
+	/*background: rgba(255,255,255,0.4);*/
+	top: 217px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.8);
+	/*字体加粗*/
+	font-weight: bolder;
+	font-family: "黑体";
+	/*文字水平居中*/
+	text-align: center;
+	/*文字垂直居中*/
+	line-height: 35px;
+	cursor: pointer;
+	/*无法选择内容*/
+	user-select:none;
+}
+.box .leftBtn{
+	left: 300px;
+	/*右上角是圆角*/
+	/*border-top-right-radius: 50%;*/
+	/*右下角是圆角*/
+	/*border-bottom-right-radius: 50%;*/
+	
+}
+.box .rightBrn{
+	right: 0px;
+	/*左上角为圆角*/
+	/*border-top-left-radius: 50%;*/
+	/*左下角为圆角*/
+	/*border-bottom-left-radius: 50%;*/
+}
+/*鼠标经过箭头*/
+.box div:hover{
+	background: rgba(0,0,0,0.6);
+}
