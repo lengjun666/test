@@ -1,3 +1,17 @@
+<?php
+	//	连接数据库
+	$conn = mysqli_connect("127.0.0.1", "midemo", "midemo", "midemo");
+	
+	//	设置字符集
+	mysqli_set_charset($conn,"utf8");
+
+	// sql语句	
+	$sql = "select * from goods";
+	
+	// 提交查询
+	$result = mysqli_query($conn, $sql);
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -124,6 +138,25 @@
 					</ul>
 				</div>
 			</div>
+		<!--展示商品-->
+		<div class="goodsBox">
+			<div class="goodsCon">
+				<?php 
+					while ($row = mysqli_fetch_assoc($result)) {
+					?>
+				<div class="goodsDiv">
+					<!--图片-->
+					<img src="<?php echo $row['imgsrc'] ?>"/>
+					<!--名字-->
+					<p class="gName"><?php echo $row['goodsname'] ?></p>
+					<!--简介-->
+					<p class="gText"><?php echo $row['goodstext'] ?></p>
+					<!--价格-->
+					<p class="gRmb"><?php echo $row['goodsrmb'] ?></p>
+				</div>
+				<?php } ?>
+			</div>
+		</div>
 			<script src="js/jquery-2.1.0.js" type="text/javascript"></script>
 			<script src="js/mi.js" type="text/javascript"></script>
 			<script src="js/main.js" type="text/javascript" charset="utf-8"></script>

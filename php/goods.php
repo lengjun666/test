@@ -8,7 +8,7 @@
 	
 //	将图片保存到本地项目文件夹
 	move_uploaded_file($filename["tmp_name"],"../img/".$filename['name'] );
-	print_r($filename);
+//	print_r($filename);
 //	将图片的路径存到数据库的表中
 	$filesrc = "img/".$filename["name"];
 	// 连接数据库
@@ -21,12 +21,13 @@
 	$result = mysqli_query($conn, $sql);
 	// 判断结果
 	if($result){
-		echo "<script type='text/javascript'>alert('上传成功');</script>";
-		echo "<script type='text/javascript'>location.href='http://www.midemo.com/login.html';</script>";
+		echo "<script type='text/javascript'>alert('上传成功');</script>";	
 	}else{
-		echo "<script type='text/javascript'>location.href='http://www.midemo.com/register.html';</script>";
 		echo "<script type='text/javascript'>alert('上传失败');</script>";
 	}
+	
 	// 关闭连接
 	mysqli_close($conn);
+	
+	echo "<script type='text/javascript'>location.href='http://www.midemo.com/goods.html';</script>";
 ?>
