@@ -23,5 +23,8 @@ repassinput.onblur = function(){
 
 //阻止提交
 document.querySelector("[type=submit]").onclick = function(e){
-	
+	var repassText = document.getElementById("repassText");
+	if(passinput.value != repassinput.value || passinput.value.length < 6 || passinput.value.length > 12){
+		e.preventDefault();
+	}
 }

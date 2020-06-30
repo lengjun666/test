@@ -161,5 +161,8 @@
 			<script src="js/mi.js" type="text/javascript"></script>
 			<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</body>
-
+<?php
+	//	关闭连接
+	mysqli_close($conn);
+?>
 </html>

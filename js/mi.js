@@ -30,3 +30,7 @@ $(".ewmSpan").click(function(){
 	$(".ewmBox").css("display","block");
 	$(".userBox").css("display","none");
 });
+// 登录最上面图标区域
+$(".topBox img").click(function(){
+	window.location.href="index.php";
+});
