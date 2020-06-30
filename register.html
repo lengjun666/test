@@ -8,18 +8,20 @@
 	<body>
 		<div class="box">
 			<!--图标-->
-			<div class="logoImg"></div>
+			<a href="index.php"><div class="logoImg"></div></a>
 			<!--标题-->
 			<h1>注册小米账号</h1>
 			<div class="con">
 				<form action="php/register.php" method="post">
 					<input type="text" name="username" placeholder="请输入用户名" />
 					<input type="password" name="password" placeholder="请输入密码" />
-					<input type="password" name="repassword" placeholder="请确认密码" />
-			
+					<p id="passText" class="passText"></p>
+					<input type="password" id="repassword" name="repassword" placeholder="请确认密码" />
+					<p id="repassText" class="repassText"></p>
 					<input type="submit" value="注册" />
 				</form>
 			</div>
 		</div>
 	</body>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -68,7 +68,7 @@
 					<span>|</span>
 					<a href="register.html">注册</a>
 					<span>|</span>
-					<a href="#">消息通知</a>
+					<a href="goods.html">上传商品</a>
 				</div>
 			</div>
 
@@ -104,11 +104,11 @@
 		<div class="rotationBox">
 			<div class="box">
 				<!--图片-->
-				<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12a95d14eec558d7ebd585b1b3b725b0.jpg?w=2452&h=920" />
-				<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/291988b4fda81e15503d64ef11c4a3ff.jpg?thumb=1&w=1533&h=575&f=webp&q=90" />
-				<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/29d0a0b83843d7d1ba7a30a9400257e9.jpg?thumb=1&w=1533&h=575&f=webp&q=90" />
-				<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e52c3e98602b90f198ec316dce253cba.jpg?thumb=1&w=1533&h=575&f=webp&q=90" />
-				<img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6ef43cf9f138a7fc3a39273d7e3d13b6.jpg?thumb=1&w=1533&h=575&f=webp&q=90" />
+				<img src="img/band1.jpg" />
+				<img src="img/band2.jpg" />
+				<img src="img/band3.jpg" />
+				<img src="img/band4.jpg" />
+				<img src="img/band5.jpg" />
 				<!--左下角小圆点-->
 				<ul>
 					<li class="listOne"></li>

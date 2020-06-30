@@ -42,3 +42,8 @@ body{
 	background: #FF6700;
 	color: #F9F9F9;
 }
+.con form p{
+	/*display: none;*/
+	color: red;
+	font-size: 12px;
+}

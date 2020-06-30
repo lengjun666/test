@@ -44,6 +44,7 @@
 	border-radius: 50%;
 	/*修改光标为小手*/
 	cursor: pointer;
+	border: 1px solid #333333;
 }
 /*第一个小圆点*/
 .box ul .listOne{
